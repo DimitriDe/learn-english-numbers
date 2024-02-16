@@ -1,0 +1,41 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 70px;
+}
+
+#generated-number,
+#textual-number,
+#textual-correction {
+    font-size:22px;
+    height:32px
+}
+
+.wellz {
+    padding: 10px;
+    background-color:#fafafa;
+    border: 1px solid #cccccc;
+    margin:10px 0;
+    position:relative;
+}
+
+#generated-number-actions {
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#textual-number-actions {
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#score-board {
+    height:200px;
+    overflow-y : auto;
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Lean English Numbers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Learn english numbers</a>
+                </div>
+                <a class="navbar-brand pull-right" id="firstname" href="#"></a>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wellz">
+                        <div id="generated-number"></div>
+                        <div id="generated-number-actions">
+                            <a href="#" class="btn btn-primary bt-generate" title="Generate random number"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="1">One</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="2">Two</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="3">Three</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="4">Four</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="5">Five</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="6">Six</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="7">Seven</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="8">Eight</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="9">Nine</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="11">Eleven</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="12">Twelve</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="13">Thirteen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="14">Fourteen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="15">Fifteen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="16">Sixteen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="17">Seventeen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="18">Eighteen</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="19">Nineteen</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="10">Ten</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="20">Twenty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="30">Thirty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="40">Fourty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="50">Fifty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="60">Sixty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="70">Seventy</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="80">Eighty</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="90">Ninety</a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="100">Hundred</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="1000">Thousand</a>
+                    <a href="#" class="btn btn-default btn-block bt-number" data-number="1000000">Million</a>
+                    &nbsp;<br/>
+                    <a href="#" class="btn btn-default bt-number" data-number="and">And</a>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h3>Previous tests</h3>
+                    <div id="score-board">
+                        <table class="table table-hover table-condensed">
+                            <thead>
+                                <tr><th>Number</th><th>Result</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                    </div>
+                    <h3>Score</h3>
+                    <div id="score">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wellz">
+                        <div id="textual-number"></div>
+                        <div id="textual-number-actions">
+                            <a href="#" class="btn btn-success bt-check" title="check"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+                            <a href="#" class="btn btn-warning bt-clear" title="backspace"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                            <a href="#" class="btn btn-danger bt-clear-all"title="clear"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                        </div>
+                    </div>
+                    <div class="wellz">
+                        <div id="textual-correction"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/utilities.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/corrector.js"></script>
+    </body>
+</html>
